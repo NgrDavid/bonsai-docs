@@ -24,7 +24,7 @@ permissions:
 jobs:
   update:
     name: Update ${{github.event.inputs.project}} to ${{github.event.inputs.version}}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     env:
       PROJECT: ${{github.event.inputs.project}}
       VERSION: ${{github.event.inputs.version}}
